@@ -17,10 +17,11 @@ namespace GestionDeInventario
                 Console.WriteLine("3. Actualizar precio de un producto");
                 Console.WriteLine("4. Eliminar un producto");
                 Console.WriteLine("5. Contar productos por rango de precio");
-                Console.WriteLine("6. Salir");
+                Console.WriteLine("6. Generar reporte de los productos ingresados");
+                Console.WriteLine("7. Salir");
 
                 Console.Write("Opción: ");
-                if (!int.TryParse(Console.ReadLine(), out int opcion) || opcion < 1 || opcion > 6)
+                if (!int.TryParse(Console.ReadLine(), out int opcion) || opcion < 1 || opcion > 7)
                 {
                     Console.WriteLine("Opción inválida. Intente de nuevo.");
                     continue;
@@ -44,6 +45,9 @@ namespace GestionDeInventario
                         ContarProductosPorRangoDePrecio(inventario);
                         break;
                     case 6:
+                        GenerarReporteResumido(inventario);
+                        break;
+                    case 7:
                         Console.WriteLine("Saliendo del sistema. ¡Hasta luego!");
                         return;
                 }
@@ -161,6 +165,28 @@ namespace GestionDeInventario
         {
             Console.WriteLine("\nConteo de productos por rango de precio:");
             inventario.ContarProductosPorRangoDePrecio();
+        }
+
+
+        static void GenerarReporteResumido(Inventario inventario)
+        {
+            var productos = inventario.ObtenerProductos().ToList();
+            if (productos.Count == 0)
+            {
+                Console.WriteLine("El inventario está vacío. No hay datos disponibles para generar el reporte.");
+                return;
+            }
+
+            int totalProductos = productos.Count;
+            decimal precioPromedio = productos.Average(p => p.Precio);
+            var productoMasCaro = productos.OrderByDescending(p => p.Precio).First();
+            var productoMasBarato = productos.OrderBy(p => p.Precio).First();
+
+            Console.WriteLine("\nReporte Resumido del Inventario:");
+            Console.WriteLine($"Número total de productos: {totalProductos}");
+            Console.WriteLine($"Precio promedio de los productos: {precioPromedio:C}");
+            Console.WriteLine($"Producto con el precio más alto: {productoMasCaro.Nombre} - {productoMasCaro.Precio:C}");
+            Console.WriteLine($"Producto con el precio más bajo: {productoMasBarato.Nombre} - {productoMasBarato.Precio:C}");
         }
     }
 }

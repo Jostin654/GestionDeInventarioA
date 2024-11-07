@@ -12,3 +12,4 @@ C:\Users\Wesley\Desktop\Programación 1\GestionDeInventario\obj\Debug\net8.0\ref
 C:\Users\Wesley\Desktop\Programación 1\GestionDeInventario\obj\Debug\net8.0\GestionDeInventario.pdb
 C:\Users\Wesley\Desktop\Programación 1\GestionDeInventario\obj\Debug\net8.0\GestionDeInventario.genruntimeconfig.cache
 C:\Users\Wesley\Desktop\Programación 1\GestionDeInventario\obj\Debug\net8.0\ref\GestionDeInventario.dll
+C:\Users\Wesley\Desktop\Programación 1\GestionDeInventario\obj\Debug\net8.0\GestionDeInventario.sourcelink.json
