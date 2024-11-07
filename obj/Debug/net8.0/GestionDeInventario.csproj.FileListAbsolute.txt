@@ -1,0 +1,14 @@
+C:\Users\Wesley\Desktop\Programación 1\GestionDeInventario\bin\Debug\net8.0\GestionDeInventario.exe
+C:\Users\Wesley\Desktop\Programación 1\GestionDeInventario\bin\Debug\net8.0\GestionDeInventario.deps.json
+C:\Users\Wesley\Desktop\Programación 1\GestionDeInventario\bin\Debug\net8.0\GestionDeInventario.runtimeconfig.json
+C:\Users\Wesley\Desktop\Programación 1\GestionDeInventario\bin\Debug\net8.0\GestionDeInventario.dll
+C:\Users\Wesley\Desktop\Programación 1\GestionDeInventario\bin\Debug\net8.0\GestionDeInventario.pdb
+C:\Users\Wesley\Desktop\Programación 1\GestionDeInventario\obj\Debug\net8.0\GestionDeInventario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wesley\Desktop\Programación 1\GestionDeInventario\obj\Debug\net8.0\GestionDeInventario.AssemblyInfoInputs.cache
+C:\Users\Wesley\Desktop\Programación 1\GestionDeInventario\obj\Debug\net8.0\GestionDeInventario.AssemblyInfo.cs
+C:\Users\Wesley\Desktop\Programación 1\GestionDeInventario\obj\Debug\net8.0\GestionDeInventario.csproj.CoreCompileInputs.cache
+C:\Users\Wesley\Desktop\Programación 1\GestionDeInventario\obj\Debug\net8.0\GestionDeInventario.dll
+C:\Users\Wesley\Desktop\Programación 1\GestionDeInventario\obj\Debug\net8.0\refint\GestionDeInventario.dll
+C:\Users\Wesley\Desktop\Programación 1\GestionDeInventario\obj\Debug\net8.0\GestionDeInventario.pdb
+C:\Users\Wesley\Desktop\Programación 1\GestionDeInventario\obj\Debug\net8.0\GestionDeInventario.genruntimeconfig.cache
+C:\Users\Wesley\Desktop\Programación 1\GestionDeInventario\obj\Debug\net8.0\ref\GestionDeInventario.dll
