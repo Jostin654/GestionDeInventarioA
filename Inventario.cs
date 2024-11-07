@@ -64,7 +64,16 @@ namespace GestionDeInventario
             }
         }
 
+        public void ContarProductosPorRangoDePrecio()
+        {
+            var menoresA100 = productos.Count(p => p.Precio < 100);
+            var entre100y500 = productos.Count(p => p.Precio >= 100 && p.Precio <= 500);
+            var mayoresA500 = productos.Count(p => p.Precio > 500);
 
+            Console.WriteLine($"Productos con precio menor a 100: {menoresA100}");
+            Console.WriteLine($"Productos con precio entre 100 y 500: {entre100y500}");
+            Console.WriteLine($"Productos con precio mayor a 500: {mayoresA500}");
+        }
 
     }
 }
