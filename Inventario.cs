@@ -27,5 +27,29 @@ namespace GestionDeInventario
             .OrderBy(p=> p.Precio);
         }
 
+
+        public void ActualizarPrecio(string nombreProducto, decimal nuevoPrecio)
+        {
+            var productosActualizados = productos
+                .Select(p =>
+                {
+                    if (p.Nombre.Equals(nombreProducto, StringComparison.OrdinalIgnoreCase) && nuevoPrecio > 0)
+                    {
+                        p.Precio = nuevoPrecio;
+                        Console.WriteLine($"Precio actualizado de '{p.Nombre}': {nuevoPrecio:C}");
+                    }
+                    else if (nuevoPrecio <= 0 && p.Nombre.Equals(nombreProducto, StringComparison.OrdinalIgnoreCase))
+                    {
+                        Console.WriteLine("El precio debe ser positivo.");
+                    }
+                    return p;
+                })
+                .ToList();
+
+            productos = productosActualizados;
+        }
+
+
+
     }
 }
