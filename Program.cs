@@ -156,8 +156,20 @@ namespace GestionDeInventario
 
         static void EliminarProducto(Inventario inventario)
         {
-            Console.Write("\nIngrese el nombre del producto a eliminar: ");
-            string nombreProducto = Console.ReadLine();
+            string nombreProducto;
+            while (true)
+            {
+                Console.Write("\nIngrese el nombre del producto a eliminar: ");
+                nombreProducto = Console.ReadLine();
+                if (!string.IsNullOrWhiteSpace(nombreProducto))
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("El nombre no puede estar vacío o ser solo espacios en blanco. Inténtelo de nuevo.");
+                }
+            }
             inventario.EliminarProducto(nombreProducto);
         }
 
